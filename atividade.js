@@ -68,7 +68,7 @@ console.log(todosOsTitulos);
 
 // Sua vez
 function livrosDeAutorAposAno(autor, ano) {
-    return livros.filter((livro) => livro.autor === autor).filter((livro) => livro.ano > ano)
+    return livros.filter((livro) => livro.autor === autor).filter((livro) => livro.anoPublicacao > ano);
 }
 
 // Teste da Atividade 4
