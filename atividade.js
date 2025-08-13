@@ -68,7 +68,7 @@ console.log(todosOsTitulos);
 
 // Sua vez
 function livrosDeAutorAposAno(autor, ano) {
-    return livros.filter((livro) => livro.autor = autor).filter((livro) => livro.ano > ano)
+    return livros.filter((livro) => livro.autor === autor).filter((livro) => livro.ano > ano)
 }
 
 // Teste da Atividade 4
@@ -96,7 +96,8 @@ console.log(livrosTolkienPos1950);
 // Sua vez
 function criarCartoesDeLivros() {
     return livros.map((livro) => {
-        return `Título: ${livro.titulo} | Autor: ${livro.autor} | Ano: ${livro.anoPublicacao}`
+        const {titulo, autor, anoPublicacao} = livro;
+        return `Título: ${titulo} | Autor: ${autor} | Ano: ${anoPublicacao}`
     })
 }
   
